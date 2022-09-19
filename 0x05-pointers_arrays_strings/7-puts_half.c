@@ -3,7 +3,7 @@
  * Auth: Jeremiah M Wambua
  */
 
-#include "stdio.h"
+#include "Holberton.h"
 
 /**
  * puts_half - Prints half of a string.
