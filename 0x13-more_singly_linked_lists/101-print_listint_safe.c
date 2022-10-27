@@ -1,3 +1,7 @@
+/*
+ * File: 101-print_listint_safe.c
+ */
+
 #include "lists.h"
 #include <stdio.h>
 
@@ -69,4 +73,14 @@ size_t print_listint_safe(const listint_t *head)
 		for (; head != NULL; nodes++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+		}
+	}
+
+	else
+	{
+		for (index = 0; index < nodes; index++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
 
